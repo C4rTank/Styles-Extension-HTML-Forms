@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+<style>
+    label {
+        color: rgb(179, 255, 208);
+        font-family: "Lucida Console", "Courier New", monospace;
+        }
+
+    body {
+        background-color:black;
+        }
+
+    input {
+        background-color: rgb(179, 255, 208);
+        }
+
+    input:hover {
+         background-color: rgb(64, 255, 137);
+         scale: 1.1;
+         transition: 0.15s;
+        }
+
+    select:hover {
+         background-color: rgb(64, 255, 137);
+         scale: 1.1;
+         transition: 0.15s;
+        }
+
+    label:hover {
+         color: rgb(64, 255, 137);
+         scale: 1.1;
+         transition: 0.15s;
+        }
+
+    select {
+        background-color: rgb(179, 255, 208);
+        }
+    
+    ::placeholder {
+        color: rgb(0, 0, 0);
+        font-family: "Lucida Console", "Courier New", monospace;
+        }
+
+    option {
+        color: rgb(0, 0, 0);
+        font-family: "Lucida Console", "Courier New", monospace;
+        }
+</style>
+
+    <title>Styles (Extension) HTML Forms</title>
+
+</head>
+
+<body>
+
+    <form>
+
+        <!--First name-->
+        <div>
+            <label for="First_Nam">Enter your first name : </label>
+            <input type="text" id="First_Nam" placeholder="Your first name here!">
+        </div>
+
+        <!--Last name-->
+        <div>
+            <label for="Last_Nam">Enter your last name : </label>
+            <input type="text" id="Last_Nam" placeholder="Your last name here!">
+        </div>
+
+        <br>
+
+        <!--Question_1-->
+        <div>
+            <label for="Q1">Have you entered your first Name : </label>
+            <input type="checkbox" id="Q1">
+        </div>
+
+        <!--Question_2-->
+        <div>
+            <label for="Q2">Have you entered your last Name : </label>
+            <input type="checkbox" id="Q2">
+        </div>
+
+        <br>
+
+        <!--Gender-->
+        <div>
+            <label for="Gender">Gender : </label>
+        
+            <!--Male-->
+            <label for="Male">Male</label>
+            <input type="radio" id="Male" name="Gender" value="Male">
+        
+            <!--Female-->
+            <label for="Female">Female</label>
+            <input type="radio" id="Female" name="Gender" value="Female">
+        
+            <!--Other-->
+            <label for="Other">Other</label>
+            <input type="radio" id="Other" name="Gender" value="Other">
+        </div>
+
+        <br>
+
+        <!--Birthday-->
+        <div>
+
+            <label for="Birthday">Birthday : </label>
+
+            <!--Month-->
+            <select id="Month" name="Month">
+                <option value="Month">January</option>
+                <option value="Month">February</option>
+                <option value="Month">March</option>
+                <option value="Month">April</option>
+                <option value="Month">May</option>
+                <option value="Month">June</option>
+                <option value="Month">July</option>
+                <option value="Month">August</option>
+                <option value="Month">September</option>
+                <option value="Month">October</option>
+                <option value="Month">November</option>
+                <option value="Month">December</option>
+            </select>
+            
+            <!--Date-->
+            <select id="Date" name="Date">
+                <option value="Num">1</option>
+                <option value="Num">2</option>
+                <option value="Num">3</option>
+                <option value="Num">4</option>
+                <option value="Num">5</option>
+                <option value="Num">6</option>
+                <option value="Num">7</option>
+                <option value="Num">8</option>
+                <option value="Num">9</option>
+                <option value="Num">10</option>
+                <option value="Num">11</option>
+                <option value="Num">12</option>
+                <option value="Num">13</option>
+                <option value="Num">14</option>
+                <option value="Num">15</option>
+                <option value="Num">16</option>
+                <option value="Num">17</option>
+                <option value="Num">18</option>
+                <option value="Num">19</option>
+                <option value="Num">20</option>
+                <option value="Num">21</option>
+                <option value="Num">22</option>
+                <option value="Num">23</option>
+                <option value="Num">24</option>
+                <option value="Num">25</option>
+                <option value="Num">26</option>
+                <option value="Num">27</option>
+                <option value="Num">28</option>
+                <option value="Num">29</option>
+                <option value="Num">30</option>
+                <option value="Num">31</option>
+        
+            </select>
+            
+            <!--Year-->
+            <input type="text" id="Year" placeholder="Year">
+        </div>
+
+        <br>
+
+        <div>
+            <input type="submit">
+            <input type="reset">
+
+    </form>
+
+</body>
+</html>
